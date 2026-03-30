@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matchmaker for the Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Matchmaker for the Web</h1>
+    <p class="intro">
+      Answer the five questions below using a number from 1 to 5.
+      <br>
+      1 = Strongly Disagree, 5 = Strongly Agree
+    </p>
+
+    <form id="matchForm">
+      <div class="question-box">
+        <label for="q1">1. I enjoy trying new foods.</label>
+        <input type="number" id="q1" min="1" max="5" required />
+        <small class="error" id="error1"></small>
+      </div>
+
+      <div class="question-box">
+        <label for="q2">2. I like staying up late.</label>
+        <input type="number" id="q2" min="1" max="5" required />
+        <small class="error" id="error2"></small>
+      </div>
+
+      <div class="question-box">
+        <label for="q3">3. Traveling is very important to me.</label>
+        <input type="number" id="q3" min="1" max="5" required />
+        <small class="error" id="error3"></small>
+      </div>
+
+      <div class="question-box">
+        <label for="q4">4. I enjoy outdoor activities.</label>
+        <input type="number" id="q4" min="1" max="5" required />
+        <small class="error" id="error4"></small>
+      </div>
+
+      <div class="question-box">
+        <label for="q5">5. I like planning things in advance.</label>
+        <input type="number" id="q5" min="1" max="5" required />
+        <small class="error" id="error5"></small>
+      </div>
+
+      <button type="submit">Find My Match</button>
+    </form>
+
+    <div id="results" class="results hidden">
+      <h2>Your Results</h2>
+      <div id="questionSummary"></div>
+      <p id="finalScore"></p>
+      <p id="remark"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
