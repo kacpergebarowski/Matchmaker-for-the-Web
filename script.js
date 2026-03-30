@@ -70,11 +70,11 @@ document.getElementById("matchForm").addEventListener("submit", function (event)
 
   let remark = "";
   if (finalCompatibility >= TRUE_LOVE_THRESHOLD) {
-    remark = "😍 True Love! You might be a perfect match!";
+    remark = "True Love! You might be a perfect match!";
   } else if (finalCompatibility >= FRIEND_THRESHOLD) {
-    remark = "😊 Possible Friends! There is some good compatibility here.";
+    remark = "Possible Friends! There is some good compatibility here.";
   } else {
-    remark = "🏃 Run Away! This may not be the best match.";
+    remark = "Run Away! This may not be the best match.";
   }
 
   document.getElementById("questionSummary").innerHTML = summaryHTML;
